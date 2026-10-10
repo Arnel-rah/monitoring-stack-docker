@@ -1,0 +1,10 @@
+route:
+  receiver: "discord"
+  group_by: ["alertname", "instance"]
+  group_wait: 30s
+  repeat_interval: 4h 
+
+receivers:
+  - name: "discord"
+    discord_configs:
+      - webhook_url: "https://discord.com/api/webhooks/unreachable"
