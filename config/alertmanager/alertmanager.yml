@@ -2,7 +2,7 @@ route:
   receiver: "discord"
   group_by: ["alertname", "instance"]
   group_wait: 30s
-  repeat_interval: 4h 
+  repeat_interval: 4h
 
 receivers:
   - name: "discord"

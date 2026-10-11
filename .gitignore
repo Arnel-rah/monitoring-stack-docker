@@ -1,0 +1,13 @@
+.env
+.env.*
+!.env.example
+
+# Local monitoring data
+data/
+prometheus-data/
+grafana-data/
+
+# Logs and editor files
+*.log
+.DS_Store
+.vscode/
